@@ -4,13 +4,13 @@ import img from '../images/Faqs/ask.jpg';
 const Faqs = () => {
     return (
         <div className='container my-5'>
-        <div className="row d-flex">
+        <div className="row d-flex align-items-center justify-content-center ">
         <div className="col-sm-12 col-lg-6 col-md-6 align-items-center justify-content-center ">
         <img className='w-100 rounded'   src={img} alt="" />
         </div>
         <div className="gym-content col-sm-12 col-lg-6 col-md-6 align-items-center justify-content-center px-3">
         <div >
-           <h2 className = 'text-center text-danger'>Questions</h2>
+           <h2 className = 'text-center text-danger'>FAQ's</h2>
            </div>
         <Accordion defaultActiveKey={['0']} alwaysOpen>
   <Accordion.Item eventKey="0">

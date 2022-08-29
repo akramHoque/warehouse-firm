@@ -1,4 +1,7 @@
-.logo{
-  width: 50%;
-  border-radius: 50%;
+.navbar-bg{
+  background-color: rgb(2, 2, 2);
+}
+.header a{
+  color: white;
+      margin-left: 12px;
 }

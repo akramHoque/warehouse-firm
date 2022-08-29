@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Tasty Orange",
+    "price": 420,
+    "supplier": "M/S Haaz Ali fruits Bitan",
+    "img": "https://i.ibb.co/rMHCYfL/types-of-citrus-fruits-July212020-1-min.png",
+    "quantity": 450,
+    "shortDescription": "Orange is availabe for everyone. We provide you 100% delicus oranges."
+  },
+  {
+    "name": "Apples Bar",
+    "price": 420,
+    "supplier": "M/S Brothers Fryuits.",
+    "img": "https://i.ibb.co/dMtfTr6/images.png",
+    "quantity": 100,
+    "shortDescription": "Apples is availabe for Now. We provide you 100% delicus mango."
+  },
+  {
+    "name": "Organic Mango",
+    "price": 420,
+    "img": "https://i.ibb.co/z49xLp6/495576-5105744-mango-mid-magazine.png",
+    "quantity": 200,
+    "shortDescription": "Mango is availabe for everyone. We provide you 100% delicus oranges.",
+    "suppiler": "Sumon Fruits Agency "
+  },
+  {
+    "name": "Greena Pink Guava",
+    "price": 420,
+    "img": "https://i.ibb.co/XD7SC08/fruits-for-weight-loss-370x207.png",
+    "quantity": 300,
+    "suppiler": "Sumon Fruits Agency ",
+    "shortDescription": "This is availabe for everyone. We provide you 100% delicus Banana."
+  },
+  {
+    "name": "Yellow Bananaa",
+    "price": 420,
+    "img": "https://i.ibb.co/58dQS3g/Bananas-5c6a36a346e0fb0001f0e4a3.png",
+    "quantity": 400,
+    "shortDescription": "Bananaa is availabe for everyone. We provide you 100% delicus Banana.",
+    "suppiler": "M/S Harun Store House"
+  },
+  {
+    "name": "Sour Orange",
+    "price": 420,
+    "img": "https://i.ibb.co/rMHCYfL/types-of-citrus-fruits-July212020-1-min.png",
+    "quantity": 250,
+    "suppiler": "Sumon Fruits Agency ",
+    "shortDescription": "Orange is availabe for everyone. We provide you 100% delicus oranges."
+  }
+]

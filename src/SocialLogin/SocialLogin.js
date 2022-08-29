@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import google from '../images/Logo/google.png';
 import Loading from '../Shared/Loading/Loading';
 
-
+//pass: ZGBzonhKhB2WXFWr
 const SocialLogin = () => {
     
     const navigate = useNavigate();

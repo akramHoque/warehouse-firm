@@ -1,0 +1,10 @@
+.inventory{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  height: 25%;
+  width: 35%;
+text-align: center;
+ margin-top: 20px;
+ 
+}
