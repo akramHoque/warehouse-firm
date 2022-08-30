@@ -8,7 +8,7 @@ const Items = () => {
 
 
     useEffect(() => {
-        fetch('https://young-sands-62072.herokuapp.com/items')
+        fetch('http://localhost:5000/items')
             .then(res => res.json())
             .then(data => setItems(data.slice(0, 6)))
     }, [])

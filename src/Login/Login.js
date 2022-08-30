@@ -44,7 +44,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
-        const { data: info } = await axios.post('https://rocky-spire-40450.herokuapp.com/token', { email });
+        const { data: info } = await axios.post('http://localhost:5000/token', { email });
         localStorage.setItem('accessToken', info.accessToken);
         navigate(from, { replace: true });
         console.log(info);

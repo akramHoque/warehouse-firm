@@ -7,58 +7,58 @@ const Inventory = () => {
     const { itemId } = useParams();
     const [inventory, setInventory] = useState({});
     useEffect(() => {
-        const url = `https://young-sands-62072.herokuapp.com/inventory/${itemId}`;
+        const url = `http://localhost:5000/inventory/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data));
     }, [inventory])
 
-    // const decreaseQuantity = event => {
+    const decreaseQuantity = event => {
 
-    //     event.preventDefault();
+        event.preventDefault();
 
-    //     const newQuantity = parseInt(inventory.quantity) - 1;
-    //     const quantityFinal = { newQuantity };
-    //     console.log(quantityFinal);
+        const newQuantity = parseInt(inventory.quantity) - 1;
+        const quantityFinal = { newQuantity };
+        console.log(quantityFinal);
 
-    //     fetch(`https://rocky-spire-40450.herokuapp.com/inventory/${itemId}`, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(quantityFinal)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log('success', data);
-    //             alert('quantity updated !!!')
-    //         })
-    // }
+        fetch(`http://localhost:5000/inventory/${itemId}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(quantityFinal)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('success', data);
+                alert('quantity updated !!!')
+            })
+    }
 
     //handle increase quantity
 
-    // const increaseQuantity = event => {
-    //     event.preventDefault();
-    //     const number = parseInt(event.target.number.value);
-    //     const quantity = parseInt(inventory.quantity);
-    //     const newQuantity = number + quantity;
-    //     const quantitySum = { newQuantity };
+    const increaseQuantity = event => {
+        event.preventDefault();
+        const number = parseInt(event.target.number.value);
+        const quantity = parseInt(inventory.quantity);
+        const newQuantity = number + quantity;
+        const quantitySum = { newQuantity };
 
-    //     fetch(`https://rocky-spire-40450.herokuapp.com/inventory/${itemId}`, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(quantitySum)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log('success', data);
-    //             alert('quantity updated !!!')
-    //         })
+        fetch(`http://localhost:5000/inventory/${itemId}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(quantitySum)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('success', data);
+                alert('quantity updated !!!')
+            })
 
-    //     event.target.reset();
-    // }
+        event.target.reset();
+    }
 
     return (
 
@@ -76,7 +76,7 @@ const Inventory = () => {
 
             </div>
 
-            {/* <div className='text-center mb-3'>
+            <div className='text-center mb-3'>
                 <button onClick={decreaseQuantity} className='btn btn-warning text-center mx-auto'>Delivered</button>
             </div>
 
@@ -92,7 +92,7 @@ const Inventory = () => {
 
             <Link to='/manageInventories' className='m-5 pb-5'>
                 <button className='btn bg-secondary text-warning'>Manage Inventories</button>
-            </Link> */}
+            </Link>
 
 
 
