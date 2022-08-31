@@ -36,7 +36,7 @@ const ManageInventories = () => {
 
 
   return (
-    <div className='container'>
+    <div className='container pb-5'>
       <div className="row">
         <h1 className=' text-center mb-3'> <span className='text-danger p-2 '>Items</span></h1>
         <div className="items-container mb-5 ">
@@ -45,7 +45,7 @@ const ManageInventories = () => {
               <div className='item' key={item?._id}>
                 <img className='w-50' src={item?.img} alt="" />
                 <h4 className='text-muted'>{item?.name}</h4>
-                <h6 className='text-muted'>Suplier Name: {item?.supplierName}</h6>
+                <h6 className='text-muted'>Suplier Name: {item?.supplier}</h6>
                 <p>Price: ${item?.price}</p>
                 <button onClick={() => handleDeleteItem(item?._id)} className='btn btn-warning'>Delete</button>
               </div>
@@ -58,7 +58,7 @@ const ManageInventories = () => {
       </div>
       <div className='text-center pb-5'>
         <Link to='/addItem' className='text-center text-warning'>
-          <button className='btn bg-secondary text-warning'>Add New Item</button>
+          <button className='btn bg-warning'>Add New Item</button>
         </Link>
       </div>
     </div>

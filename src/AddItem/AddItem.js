@@ -43,7 +43,7 @@ const AddItem = () => {
                     <input type="email" value={user?.email} {...register("email")} />
                     <textarea className='mb-1' placeholder='Description' {...register("shortDescription")} />
                     <input className='mb-1' placeholder='Price' type="number" {...register("price")} />
-                    <input className='mb-1' placeholder='SupplierName' type="text" {...register("supplierName")} />
+                    <input className='mb-1' placeholder='SupplierName' type="text" {...register("supplier")} />
                     <input className='mb-1' placeholder='photoURL' type="text" {...register("img")} />
                     <input type="submit" value='Add New Item' className='btn bg-primary text-white' />
                     <ToastContainer></ToastContainer>

@@ -63,7 +63,7 @@ const Inventory = () => {
     return (
 
 
-        <div>
+        <div className='my-5'>
             <div className='inventory mx-auto my-5'>
                 <img className='w-100' src={inventory?.img} alt="" />
                 <p className='id'>{inventory?._id}</p>
@@ -75,24 +75,23 @@ const Inventory = () => {
                 <p className='text-danger'>Stock: {inventory.quantity}</p>
 
             </div>
-
-            <div className='text-center mb-3'>
+            <div className='text-center '>
                 <button onClick={decreaseQuantity} className='btn btn-warning text-center mx-auto'>Delivered</button>
             </div>
 
-            <div className='text-center'>
-                <h4 className='text-secondary py-3'>Restock the Items</h4>
-
-                <form onSubmit={increaseQuantity}>
+            <div className='text-center pb-5'>
+                <h6 className='text-secondary my-3'>Restock the Items</h6>
+                <form className='my-3' onSubmit={increaseQuantity}>
                     <input type="number" name="number" id="" placeholder='please give a value' required />
                     <input className='btn btn-warning mx-2' type="submit" value="Restock" />
-
-                </form>
-            </div>
-
-            <Link to='/manageInventories' className='m-5 pb-5'>
-                <button className='btn bg-secondary text-warning'>Manage Inventories</button>
+                    <Link to='/manageInventories' className=''>
+                <button className='btn bg-warning'>Manage Inventories</button>
             </Link>
+                </form>
+                
+            </div>
+        
+            
 
 
 

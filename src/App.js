@@ -10,6 +10,7 @@ import Inventory from './Inventory/Inventory';
 import Items from './Items/Items';
 import ManageInventories from './ManageInventories/ManageInventories';
 import AddItem from './AddItem/AddItem';
+import MyItems from './MyItem/MyItems';
 
 function App() {
   return (
@@ -44,6 +45,11 @@ function App() {
                 <Route path = '/addItem' element = {
                     <RequireAuth>
                        <AddItem></AddItem>
+                    </RequireAuth>
+                }></Route>
+                <Route path = '/myItems' element = {
+                    <RequireAuth>
+                       <MyItems></MyItems>
                     </RequireAuth>
                 }></Route>
      </Routes>

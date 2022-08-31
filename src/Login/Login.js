@@ -66,7 +66,7 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto'>
+        <div className='container w-25 mx-auto'>
 
             <h2 className='text-danger text-center my-3 py-3'>Please Login</h2>
             <Form onSubmit={handleLogin}>
