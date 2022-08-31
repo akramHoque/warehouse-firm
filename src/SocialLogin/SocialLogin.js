@@ -44,9 +44,9 @@ const SocialLogin = () => {
             <div>
                 <button
                     onClick={() => signInWithGoogle()}
-                    className='btn btn-success w-50 mb-5 d-block mx-auto'>
-                    <img style={{ width: '33px' }} src={google} alt="" />
-                    <span className='px-3'>Google</span>
+                    className='btn btn-success w-50 mb-3 d-block mx-auto'>
+                    <img style={{ width: '20px' }} src={google} alt="" />
+                    <span className='px-2'>Google</span>
                 </button>
             </div>
         </div>

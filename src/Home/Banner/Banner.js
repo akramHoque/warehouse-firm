@@ -15,8 +15,8 @@ const Banner = () => {
                         alt="First slide"
                  />
               <Carousel.Caption>
-                        <h3 className='text-danger'>Our fresh produce is sourced every morning, you get the best from us.</h3>
-                        <p className='text-danger'>All the fruits at an affordable price, And the best of quality. Tomatto, guava, papaya, oranges</p>
+                        {/* <h3 className='text-danger'>Our fresh produce is sourced every morning, you get the best from us.</h3>
+                        <p className='text-danger'>All the fruits at an affordable price, And the best of quality. Tomatto, guava, papaya, oranges</p> */}
               </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='bg-dark'>
@@ -26,9 +26,9 @@ const Banner = () => {
                         alt="Second slide"
                     />
                 <Carousel.Caption>
-                        <h3 className='text-danger'>At Your Doorstep anywhere in anytime.</h3>
+                        {/* <h3 className='text-danger'>At Your Doorstep anywhere in anytime.</h3>
                         <p className='text-danger'><span className='text-danger'> Free Home </span>delivery.</p>
-                        <p className='text-danger'>On orders of <span className='text-danger'>$200/-</span> and avobe.</p>
+                        <p className='text-danger'>On orders of <span className='text-danger'>$200/-</span> and avobe.</p> */}
                 </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
