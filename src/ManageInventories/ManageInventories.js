@@ -12,7 +12,7 @@ const ManageInventories = () => {
   const handleDeleteItem = id => {
     const proceed = window.confirm('Are you sure to Delete?')
     if (proceed) {
-      const url = `http://localhost:5000/manageInventories/${id}`;
+      const url = `https://young-sands-62072.herokuapp.com/manageInventories/${id}`;
       fetch(url, {
         method: 'DELETE'
       })
@@ -29,7 +29,7 @@ const ManageInventories = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/manageInventories')
+    fetch('https://young-sands-62072.herokuapp.com/manageInventories')
       .then(res => res.json())
       .then(data => setInventories(data))
   }, [])

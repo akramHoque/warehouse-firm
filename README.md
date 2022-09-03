@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Live Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ [https://warehouse-firm.web.app/](https://warehouse-firm.web.app/).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Summery
 
-### `npm start`
+## Short Description
+ - This is a warehouse management website. where an user can buy the fruit item using sign in and register method. he/she can add a fruit product delete and update product when necessary.There are more protected route, user can see this page after login.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ## Features
+- This is an warehouse management systems project.
+- We use navbar in home page- inventory parts , a carousel 2 extra section and footer.
+- The iventory parts showing the stocks fruits in the wearehose which are load from database mongodb atlas.
+- we use manage inventory button both in the home page and manageInventory page which is showing all the inventory.
+- we use an update button to see the specific inventory.\
+- Also we use increase and decrease button which is increases the quantity of stocks and decreases the quantity of stocks particularly.
+- We can add an items by a form for the logged in user.
+use jwt token for more security.
+- The user cannot see the my items, add items, and manage item that is called private route. After login this page is available.
+use register form for new user and a social login.
+## The following are used in this site
+- Use react-firebase hooks, react-bootstrap, bootstrap 5 , firebase authentication, react toatify, monogodb atlas database, react hook form, react-router-dom , jsx and vanilla css where necesarry.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

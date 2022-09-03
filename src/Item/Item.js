@@ -6,8 +6,7 @@ const Item = ({item}) => {
     const { _id , name, img, shortDescription, price, supplier, quantity} = item ;
     const navigate = useNavigate();
     const handleUpdateBtn = id =>{
-        navigate(`/inventory/${id}`)
-       
+        navigate(`/inventory/${id}`)  
     }
     return (
         <div>
@@ -19,8 +18,7 @@ const Item = ({item}) => {
              <p>Quantity: {quantity}</p>
             <p className='text-danger'>Price: <span>${price}</span></p>
             <p className='text-muted'><small>{shortDescription}</small></p> 
-                <div >
-
+                <div>
                   <button onClick={() => handleUpdateBtn(_id)} className='btn btn-warning w-50 item-btn font-semibold update-button'>Update</button>
                 </div> 
         </div>

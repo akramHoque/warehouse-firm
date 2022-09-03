@@ -8,8 +8,6 @@ import Banner from './Banner/Banner';
 const Home = () => {
   return (
     <div className='pb-5'>
-      <h1 className='text-center mt-5 px-3'>Organic Fruits Warehouse</h1>
-      <h3 className=' text-center'><span className='text-danger'>Fresh and tasty</span></h3>
       <Banner></Banner>
       <Items></Items>
       <PriceList></PriceList>

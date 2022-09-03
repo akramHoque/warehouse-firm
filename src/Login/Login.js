@@ -44,7 +44,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
-        const { data: info } = await axios.post('http://localhost:5000/token', { email });
+        const { data: info } = await axios.post('https://young-sands-62072.herokuapp.com/token', { email });
         localStorage.setItem('accessToken', info.accessToken);
         navigate(from, { replace: true });
         console.log(info);
